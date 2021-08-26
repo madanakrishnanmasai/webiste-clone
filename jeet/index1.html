@@ -24,6 +24,10 @@
             gap: 5px;
             /* border: 1px solid black; */
             padding-top: 20px;
+            /* //new addition */
+            position: sticky;
+            -webkit-position: sticky;
+            top: 20px;
             
            
             
@@ -140,7 +144,7 @@
            <div id ="hover_jb6">Management (13)</div>
            <div id ="hover_jb7">Blockchain (2)</div>
            <div id ="hover_jb8">Health (1)</div>
-           <div>Arts (3)</div>
+           <div id ="hover_jb91">Arts (3)</div>
            <div id ="hover_jb9">Business Analytics (5)</div>
            <div id ="hover_jb10">Study Abroad (9)</div>
            <div id ="hover_jb11">upGrad for Universities (9)
@@ -155,7 +159,7 @@
 <script>
     var CoursesData = [
         {
-            U_img: "https://m.economictimes.com/thumb/height-450,width-600,imgsize-470912,msid-81653586/ssbm_uni_640-x-480.jpg",
+            U_img: "https://www.d2l.com/wp-content/uploads/2015/10/hero-front_of_deakin-university-deakin_university-1.jpg",
             U_logo: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/Logo_image__1624951507884.png",
             U_name: "Swiss School of Business Management",
             Category: "MBA",
@@ -236,7 +240,7 @@
         },
         //demo Data MBA
         {
-            U_img: "https://www.cuchd.in/iqac/img/cu-bg.jpg",
+            U_img: "https://www.d2l.com/wp-content/uploads/2015/10/hero-front_of_deakin-university-deakin_university-1.jpg",
             U_logo: "https://www.cuchd.in/about/assets/images/cu-logo.png",
             U_name: "Deakin University and MICA",
             Category: "MBA",
@@ -466,7 +470,7 @@
         show_course_div.append(div)
     }
     })
-   
+   //mouse over..............................
     var hover1 = document.getElementById("hover_jb1")
    hover1.onmouseover = function(event) {
        hover1.style.backgroundColor = "#eb4d4b";
@@ -491,14 +495,93 @@
    hover3.onmouseout = function(event) {
     hover3.style.backgroundColor = "white";
    }
+
+   var hover4 = document.getElementById("hover_jb4")
+   hover4.onmouseover = function(event) {
+       hover4.style.backgroundColor = "#eb4d4b";
+   }
+   hover4.onmouseout = function(event) {
+    hover4.style.backgroundColor = "white";
+   }
+   var hover5 = document.getElementById("hover_jb5")
+   hover5.onmouseover = function(event) {
+       hover5.style.backgroundColor = "#eb4d4b";
+   }
+   hover5.onmouseout = function(event) {
+    hover5.style.backgroundColor = "white";
+   }
+   var hover6 = document.getElementById("hover_jb6")
+   hover6.onmouseover = function(event) {
+       hover6.style.backgroundColor = "#eb4d4b";
+   }
+   hover6.onmouseout = function(event) {
+    hover6.style.backgroundColor = "white";
+   }
+   var hover7 = document.getElementById("hover_jb7")
+   hover7.onmouseover = function(event) {
+       hover7.style.backgroundColor = "#eb4d4b";
+   }
+   hover7.onmouseout = function(event) {
+    hover7.style.backgroundColor = "white";
+   }
+   var hover8 = document.getElementById("hover_jb8")
+   hover8.onmouseover = function(event) {
+       hover8.style.backgroundColor = "#eb4d4b";
+   }
+   hover8.onmouseout = function(event) {
+    hover8.style.backgroundColor = "white";
+   }
+   var hover9 = document.getElementById("hover_jb9")
+   hover9.onmouseover = function(event) {
+       hover9.style.backgroundColor = "#eb4d4b";
+   }
+   hover9.onmouseout = function(event) {
+    hover9.style.backgroundColor = "white";
+   }
+
+   var hover91 = document.getElementById("hover_jb91")
+   hover91.onmouseover = function(event) {
+       hover91.style.backgroundColor = "#eb4d4b";
+   }
+   hover91.onmouseout = function(event) {
+    hover91.style.backgroundColor = "white";
+   }
+
+   var hover10 = document.getElementById("hover_jb10")
+   hover10.onmouseover = function(event) {
+       hover10.style.backgroundColor = "#eb4d4b";
+   }
+   hover10.onmouseout = function(event) {
+    hover10.style.backgroundColor = "white";
+   }
+   var hover11 = document.getElementById("hover_jb11")
+   hover11.onmouseover = function(event) {
+       hover11.style.backgroundColor = "#eb4d4b";
+   }
+   hover11.onmouseout = function(event) {
+    hover11.style.backgroundColor = "white";
+   }
+   var hover12 = document.getElementById("hover_jb12")
+   hover12.onmouseover = function(event) {
+       hover12.style.backgroundColor = "#eb4d4b";
+   }
+   hover12.onmouseout = function(event) {
+    hover12.style.backgroundColor = "white";
+   }
+
   var courseListDiv = document.getElementById("coursesList_jb") 
   var mbaDiv = document.getElementById("mba_jb") 
- function showDataScience(){
+ function showDataScience(event){
     mbaDiv.style.backgroundColor = "white"
     mbaDiv.style.color = "black"
     show_course_div.style.display = "none";
     var showDataScienceCourse = document.createElement("div");
     showDataScienceCourse.setAttribute("id", "dataScienceCourseId");
+    
+    hover1.onmouseout = function(event) {
+    hover1.style.backgroundColor = "b4d4b";
+    hover1.style.color = "white"
+   }
     // showDataScienceCourse.style.backgroundColor.important = "eb4d4b"
 
     showDataScienceCourse.setAttribute("id","dataScience")
