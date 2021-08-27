@@ -21,7 +21,7 @@ body {
 #nav_courses_btn_ms {
   background-color: rgb(209, 24, 24);
   color: whitesmoke;
-  border-radius: 6px;
+  border-radius: 3px;
   border: red;
   padding: 8px;
   margin-bottom: 8px;
@@ -30,19 +30,17 @@ body {
   font-size: smaller;
   font-weight: bolder;
   /* font-family:  */
-  cursor: pointer;
 }
 
 .nav_options_ms {
   font-size: smaller;
   font-weight: bolder;
-  cursor: pointer;
 }
 
 #startLearning_btn_ms {
   background-color: rgb(209, 24, 24);
   color: whitesmoke;
-  border-radius: 10px;
+  border-radius: 3px;
   border: red;
   padding: 8px;
   margin-bottom: 8px;
@@ -50,7 +48,6 @@ body {
   height: 42px;
   font-size: 14px;
   font-weight: bolder;
-  cursor: pointer;
 }
 
 #face_window_ms {
@@ -152,8 +149,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
-  border-radius: 15px;
 
   /* justify-content: center; */
 }
