@@ -459,6 +459,46 @@ color: gray;
 }
 
 
+#startLearning_btn_ms{
+    display: flex;
+    gap:14%;
+    font-size: large;
+
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: rgb(46, 46, 61);
+    border: 1px solid black;
+}
+
+.profile_sub_menu_ms{
+    display: none;
+}
+
+#startLearning_btn_ms:hover .profile_sub_menu_ms {
+    display: block;
+    position:absolute;
+    border: 1px solid black;
+    width: 400px;
+    /* height: 450px; */
+    margin-top: 33px;
+    background-color: white;
+    text-align: left;
+}
+
+.profile_sub_menu_ms ul{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ list-style-type: none;
+ background-color: white;
+ color: black;
+}
+
+.profile_sub_menu_ms ul:hover li:hover {
+    color: red;
+}
+
 
   </style>
   <body>
@@ -607,7 +647,23 @@ color: gray;
         </ul>
       </div>
     </div>
-    <button id="startLearning_btn_ms">START LEARNING</button>
+    <button id="startLearning_btn_ms" style="display: flex;"><img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="" style="width: 20%; margin-left:0px;"> Name <div style="font-size: x-large;">	
+&#129171;</div>
+
+ <div class="profile_sub_menu_ms">
+        <ul>
+     <li><img src="https://t4.ftcdn.net/jpg/02/76/07/17/360_F_276071788_ChOuEbb3iJEQwXyRig8rJnUJrXQCnh6p.jpg" alt="verify_mail" style="width: 100%; height: 150px;"> </li>
+     <li>Edit Profile</li>
+     <li>My application</li>
+     <li>My Courses</li>
+     <li>Change Password</li>
+     <li><img src="https://t3.ftcdn.net/jpg/03/84/81/40/360_F_384814098_6lrDkHMLzZ8Yz6C9PXD9RrbFFpBovjDr.jpg" alt="refer_image" style="width: 100%; height: 150px; "></li>
+     <li>Logout</li>
+        </ul>
+      </div>
+
+
+</button>
   </div>
 
   <div id="face_window_ms">
