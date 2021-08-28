@@ -6,457 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <link rel="stylesheet" href="manasvi.css">
+  <link rel="stylesheet" href="jeetSailu.css">
+  <link rel="stylesheet" href="madan.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900;850&display=swap" rel="stylesheet" />
 </head>
-<style>
-  body {
-    font-family: "Montserrat", sans-serif;
-  }
-
-  #navBar_ms {
-    margin: auto;
-    width: 1200px;
-    height: 90px;
-    /* border: 2px solid black; */
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-
-  #upGrad_logo_ms {
-    width: 100px;
-    padding: 10px;
-    padding-top: 20px;
-  }
-
-  #nav_courses_btn_ms {
-    background-color: rgb(209, 24, 24);
-    color: whitesmoke;
-    border-radius: 6px;
-    border: red;
-    padding: 8px;
-    /* margin-bottom: 8px; */
-    width: 120px;
-    height: 35px;
-    width: 150px;
-    height: 45px;
-    font-size: smaller;
-    font-weight: bolder;
-    /* font-family:  */
-    cursor: pointer;
-  }
-
-  #nav_courses_btn_ms:hover {
-    background-color: whitesmoke;
-    color: rgb(209, 24, 24);
-    border-radius: 6px;
-    border: 2px solid red;
-    padding: 8px;
-    margin-bottom: 8px;
-    width: 150px;
-    height: 45px;
-    font-size: smaller;
-    font-weight: bolder;
-    /* font-family:  */
-    cursor: pointer;
-  }
-
-
-
-  .nav_options_ms {
-    font-size: smaller;
-    font-weight: bolder;
-    cursor: pointer;
-  }
-
-  .nav_options_ms:hover {
-    font-size: smaller;
-    font-weight: bolder;
-    cursor: pointer;
-    color: rgb(209, 24, 24);
-  }
-
-
-
-  #startLearning_btn_ms {
-    background-color: rgb(209, 24, 24);
-    color: whitesmoke;
-    border-radius: 10px;
-    border: red;
-    padding: 8px;
-    margin-bottom: 8px;
-    width: 160px;
-    height: 42px;
-    font-size: 14px;
-    font-weight: bolder;
-    cursor: pointer;
-  }
-
-  #startLearning_btn_ms:hover {
-    background-color: whitesmoke;
-    color: rgb(209, 24, 24);
-    border-radius: 10px;
-    border: 2px solid red;
-    padding: 8px;
-    margin-bottom: 8px;
-    width: 160px;
-    height: 42px;
-    font-size: 14px;
-    font-weight: bolder;
-    cursor: pointer;
-  }
-
-
-
-  #face_window_ms {
-    margin: auto;
-    margin-bottom: 100px;
-    width: 1200px;
-    height: 600px;
-    border: 2px solid white;
-    border-radius: 15px;
-    position: relative;
-    z-index: -1;
-    /* opacity: 0.8; */
-    /* background-color: brown; */
-    /* background: linear-gradient(to right, black, brown); */
-  }
-
-  #face_window_ms::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    -webkit-border-radius: 25px;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
-      url(https://images.unsplash.com/photo-1611179458969-04ba15f34c5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJvd24lMjBidWlsZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    opacity: 0.9;
-    z-index: -1;
-    background-repeat: no-repeat;
-  }
-
-  #inner_window_ms {
-    width: 90%;
-    height: 80%;
-    margin: auto;
-    margin-top: 80px;
-    /* border: 2px solid red; */
-    /* padding: 20px; */
-  }
-
-  .div1_face_ms {
-    font-weight: 800;
-    font-size: 53px;
-    /* margin-top: 50px; */
-    color: whitesmoke;
-  }
-
-  .div2_face_ms {
-    display: flex;
-    gap: 50px;
-    height: 70px;
-    color: red;
-    margin-top: 20px;
-    color: white;
-  }
-
-  .div3_face_ms {
-    display: flex;
-    gap: 50px;
-    height: 70px;
-    color: red;
-    margin-top: 20px;
-  }
-
-  #para_face_ms {
-    width: 40%;
-    font-size: 20px;
-    color: whitesmoke;
-    /* border: 1px solid rgb(19, 20, 18); */
-
-    /* width:  */
-  }
-
-  .small_box_ms {
-    display: flex;
-    gap: 5%;
-    width: 25%;
-    border: 2px solid rgb(216, 196, 196);
-    border-radius: 30px;
-    color: whitesmoke;
-    align-items: center;
-  }
-
-  .small_box_ms img {
-    height: 100%;
-    border-radius: 30px;
-  }
-
-  #button_face_ms {
-    width: 36%;
-    background-color: rgb(255, 17, 0);
-    color: whitesmoke;
-    padding-left: 20px;
-    /* padding-top: 26px; */
-    padding-right: 20px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    border-radius: 15px;
-
-    /* justify-content: center; */
-  }
-
-  #button_face_ms :nth-child(2) {
-    font-size: 40px;
-  }
-
-  .pos_rel_ms {
-    position: relative;
-  }
-
-  /* styling of slider /////////////////////////////////////////////////////////////////////*/
-  /* 
-  .slide_ms {
-    height: 250px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-  } */
-
-  /* .slider_cont_ms {
-  position: fixed;
-  top:50px;
-  z-index: 1;
-  } */
-
-  .slider_ms {
-    /* width: 90%; */
-    /* margin-top: 600px; */
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    /* top: 100px; */
-    /* border: 4px solid red; */
-    margin: auto;
-    display: flex;
-    overflow: hidden;
-
-    /* flex-direction: column; */
-  }
-
-  .slider_track_ms {
-    display: flex;
-
-    justify-content: space-between;
-
-    position: relative;
-    width: 100%;
-    /* width: calc(250px * 27); */
-
-    /* animation: scroll 40% linear infinite; */
-    /* width: calc(250px * 18); */
-    /* flex-direction: column; */
-  }
-
-  /* @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 9));
-    }
-  } */
-  .slide {
-    /* height: 250px; */
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-    display: flex;
-
-    /* flex-direction: row; */
-  }
-
-  @keyframes manasvi {
-    0% {
-      left: 0;
-    }
-
-    100% {
-      left: -100%;
-    }
-  }
-
-  .animate {
-    width: 200%;
-    margin-top: 30px;
-    animation: manasvi 10s linear infinite;
-    /* top: 150%; */
-    transform: translate(0, -50%);
-  }
-
-  #university_partners_ms {
-    margin: auto;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 100px;
-  }
-
-  #text_changer_ms {
-    margin-top: 30px;
-    color: whitesmoke;
-    font-size: x-large;
-  }
-
-  .sub_menu_1_ms {
-    display: none;
-  }
-
-  .more_sub_menu_ms {
-    display: none;
-  }
-
-  #nav_courses_btn_ms:hover .sub_menu_1_ms {
-
-    display: block;
-    position: absolute;
-    /* position: relative; */
-
-    background: white;
-    margin-top: 15px;
-    margin-bottom: -15px;
-
-  }
-
-  .nav_options_ms:hover .more_sub_menu_ms {
-
-    display: block;
-    position: absolute;
-    /* position: relative; */
-
-    background: white;
-    margin-top: 5px;
-    margin-bottom: -15px;
-
-
-  }
-
-
-
-  #nav_courses_btn_ms:hover .sub_menu_1_ms ul {
-
-    display: block;
-    margin: 10px;
-    width: 100%;
-  }
-
-  .nav_options_ms:hover .more_sub_menu_ms ul {
-
-    display: block;
-    margin: 10px;
-    width: 40%;
-    border: 1px solid black;
-  }
-
-  #nav_courses_btn_ms:hover .sub_menu_1_ms ul li {
-    list-style-type: none;
-
-    width: 200px;
-    margin-right: 80px;
-    padding: 20px;
-    border-bottom: 1px dotted black;
-    background: white;
-    border-radius: 0;
-    text-align: center;
-    color: black;
-    font-size: medium;
-
-  }
-
-  .nav_options_ms:hover .more_sub_menu_ms ul li {
-    list-style-type: none;
-
-    width: 50%;
-    margin-right: 80px;
-    padding: 20px;
-    border-bottom: 1px dotted black;
-    background: white;
-    border-radius: 0;
-    text-align: center;
-    color: black;
-    font-size: medium;
-
-  }
-
-  #nav_courses_btn_ms:hover .sub_menu_1_ms ul li a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .nav_options_ms:hover .more_sub_menu_ms ul li a {
-    text-decoration: none;
-    color: black;
-  }
-
-  #nav_courses_btn_ms:hover .sub_menu_1_ms :hover {
-    color: red;
-  }
-
-  .nav_options_ms:hover .more_sub_menu_ms:hover {
-    color: red;
-  }
-
-  .sub_menu_2_ms #bigger_box_ms {
-    display: none;
-  }
-
-  .sub_menu_2_ms:hover #bigger_box_ms {
-    display: flex;
-    gap: 30px;
-    position: absolute;
-    flex-direction: column;
-    /* align-items:stretch;*/
-
-    /* background-color: chartreuse; */
-    background-color: whitesmoke;
-    /* border: 2px solid red; */
-    margin-top: -40px;
-    margin-left: 220px;
-    width: 120%;
-    height: 800px;
-    padding: 15px;
-
-    overflow: hidden;
-
-  }
-
-
-
-  .sub_menu_2_ms:hover #bigger_box_ms .little_box_ms {
-
-    border: 2px solid black;
-    color: black;
-    border-radius: 10px;
-    /* position: absolute; */
-    margin-top: -10px;
-    /* margin-left: 0px; */
-    /* background-color: rgba(0,100,0); */
-
-    width: 94%;
-    height: 200px;
-    /* padding: 15px; */
-  }
-</style>
 
 <body>
+  <!-- MANASVI -->
   <div id="navBar_ms">
     <img id="upGrad_logo_ms" src="https://startupreporter.in/wp-content/uploads/2020/08/UpGradLogo.png" alt="" />
     <button id="nav_courses_btn_ms">COURSES
@@ -685,40 +242,211 @@
       </div>
     </div>
   </div>
+
+  <!-- MADAN -->
+  <section id="courses-mk">
+    <div class="courses-container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="explore img-1">
+                <div class="explore-content">
+                  <button>Explore</button>
+                  <h1>Online Bachelor's From Top Universities</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-2">
+                <div class="explore-content">
+                  <button>Learn More</button>
+                  <h1>Get the right MBA degree</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-3">
+                <div class="explore-content">
+                  <button>Know More</button>
+                  <h1>1:1 Career prep Sessions with Experts - ₹599 onwards</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-4">
+                <div class="explore-content">
+                  <button>Start Free Courses</button>
+                  <h1>upStart - Priceless Learnign</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-5">
+                <div class="explore-content">
+                  <button>Watch Free Videos</button>
+                  <h1>Master new skills with Microlearn</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-6">
+                <div class="explore-content">
+                  <button>Know More</button>
+                  <h1>Study Abroad Data Science at IU, Germany</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-7">
+                <div class="explore-content">
+                  <button>Know More</button>
+                  <h1>PGDM From Birla Institute of Management Technology</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-8">
+                <div class="explore-content">
+                  <button>New Launches</button>
+                  <h1>5 New MBA Sepcialisations</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-9">
+                <div class="explore-content">
+                  <button>Know More</button>
+                  <h1>M.Sc. in Data Science with 5 Sepcialisations</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              &larr;
+            </button> <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JEET - SAILU -->
+  <h1 id="exploreCourse">Explore Our Courses</h1>
+  <div id="ExploreCourses_jb">
+    <div id="coursesList_jb">
+      <div id="mba_jb">MBA & DBA (13)</div>
+      <div id="hover_jb1" onclick="showDataScience()">Data Science | Machine Learning (13)</div>
+      <div id="hover_jb2">Bachelor Degrees (8)
+      </div>
+      <div id="hover_jb3">Software & Technology (14)
+      </div>
+      <div id="hover_jb4">Marketing (4)
+      </div>
+      <div id="hover_jb5">Law (1)
+      </div>
+      <div id="hover_jb6">Management (13)</div>
+      <div id="hover_jb7" onclick="showBlockchain()">Blockchain (2)</div>
+      <div id="hover_jb8">Health (1)</div>
+      <div id="hover_jb91">Arts (3)</div>
+      <div id="hover_jb9">Business Analytics (5)</div>
+      <div id="hover_jb10">Study Abroad (9)</div>
+      <div id="hover_jb11">upGrad for Universities (9)
+      </div>
+      <div id="hover_jb12">Commerce (1)
+      </div>
+    </div>
+    <div id="show_courses_jb"></div>
+  </div>
+  <div id="freecourses_jb">
+    <hr>
+    <p>Not sure of the above domains?</p>
+    <h1>Explore Free Courses</h1>
+    <div id="showFreeCourse">
+      <div>
+        <img
+          src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+        <h1>Data Science & Analytics</h1>
+        <p>Build your foundation in the hottest industry of the 21st century</p>
+        <button>Know More</button>
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/5668888/pexels-photo-5668888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+        <h1>Management ang Marketing</h1>
+        <p>Build your foundation in the hottest industry of the 21st century</p>
+        <button>Know More</button>
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/4841630/pexels-photo-4841630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+        <h1>Technology and Machine Learning</h1>
+        <p>Build your foundation in the hottest industry of the 21st century</p>
+        <button>Know More</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MADAN -->
+  <section id="classes-mk">
+    <div class="courses-container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="explore img-10">
+                <div class="explore-content">
+                  <button>Online Workshops</button>
+                  <h1>In-depth training sessions on career skills</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-11">
+                <div class="explore-content">
+                  <button>Live Classes</button>
+                  <h1>Enriching live sessions with experts</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-12">
+                <div class="explore-content">
+                  <button>Master class</button>
+                  <h1>Lessons for success from life-learned experts</h1>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="explore img-13">
+                <div class="explore-content">
+                  <button>Short Videos</button>
+                  <h1>Build skills in less than 5 mins</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              &larr;
+            </button> <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
-
-<script>
-  var arr = [
-    "433% salary hike",
-    "300+ placement partners",
-    "1 MILLION+ total registered users",
-    "INR 73 LPA Highest salary offered",
-  ];
-
-  var text_changer = document.getElementById("text_changer_ms");
-
-  var index = 0;
-
-  setInterval(function () {
-    index++;
-    // var text = document.createElement("p");
-    // text.setAttribute("text", arr[index % arr.length]);
-
-    var div = document.createElement("div");
-
-    div.setAttribute("text", arr[index % arr.length]);
-
-    div.innerText = arr[index % arr.length];
-
-    div.setAttribute("id", index);
-
-    text_changer.append(div);
-  }, 2000);
-
-  setInterval(function () {
-    var previous_text = index - 1;
-    document.getElementById(previous_text).remove();
-  }, 2000);
-</script>
+<script src='https://cdn.jsdelivr.net/npm/@glidejs/glide'></script>
+<script src='madan.js'></script>
+<script src="manasvi.js"></script>
+<script src="jeetSailu.js"></script>
 
 </html>
