@@ -5,407 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="madan.css">
   <title>Advanced Certificate Program</title>
-  <style>
-    #banner-mk {
-      position: relative;
-    }
-
-    .container {
-      /* position: relative; */
-      width: 100%;
-      max-width: 1140px;
-      margin: 0 auto;
-    }
-
-    .container::before {
-      content: '';
-      position: absolute;
-      height: 500px;
-      top: 0px;
-      right: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background: linear-gradient(to left, rgba(0, 7, 7, 0.2), rgb(0, 0, 0)), url('https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images/program-backgrounds/tr:q-2/program-banner-blockchain-pgc.jpg') no-repeat;
-      opacity: 0.9;
-      /* background-position: 100%; */
-      background-repeat: no-repeat;
-      z-index: -1;
-      background-size: cover;
-    }
-
-    .banner-info {
-      height: auto;
-      padding-top: 36px;
-    }
-
-    .banner-title {
-      font-size: 44px;
-      line-height: 52px;
-      font-weight: 400;
-      letter-spacing: -1px;
-      width: 66%;
-    }
-
-    .banner-dec {
-      height: auto;
-      margin-right: 8px 0;
-      line-height: 24px;
-      font-size: 16px;
-      width: 60%;
-    }
-
-    .cta-btn {
-      font-size: 16px;
-      font-weight: 70;
-      width: 200px;
-      height: 44px;
-      background-color: #ef403d;
-      border: none;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all .3s ease;
-    }
-
-    .modal-container {
-      /* display: none; */
-      background: rgba(0, 0, 0, 0.3);
-      position: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 0;
-      pointer-events: none;
-      opacity: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      transition: opacity 0.3s ease;
-    }
-
-    .modal-container.show {
-      pointer-events: auto;
-      opacity: 1
-    }
-
-    .modal {
-      background: #fff;
-      border-radius: 5px;
-      box-shadow: rgba(0, 0, 0, 0.2);
-      width: 600px;
-      padding: 30px;
-      max-width: 100%;
-      text-align: center;
-    }
-
-    .modal-cont {
-      display: flex;
-    }
-
-    .modal-image {
-      display: flex;
-      width: 205px;
-      height: 189px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .modal-image>img {
-      width: 100%;
-    }
-
-    .modal-content {
-      display: flex;
-      flex-direction: column;
-      /* padding: 50px; */
-      gap: 10px;
-      align-items: left;
-    }
-
-    .modal-content h1 {
-      width: 90%;
-      text-align: left;
-      height: auto;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 112%;
-      color: #293030;
-      /* margin-top: 24px; */
-      margin-bottom: 8px;
-    }
-
-    .input-box {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-    }
-
-    .phone-number {
-      outline: none;
-      border: none;
-      width: 200px;
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 100%;
-      letter-spacing: .12em;
-      color: #091e42;
-    }
-
-    .modal-button {
-      text-transform: uppercase;
-      width: 56%;
-      height: 40px;
-      border-radius: 4px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      background: #ff5757;
-      color: white;
-    }
-
-    .close-me {
-      border: none;
-      background: none;
-      font-size: 14px;
-      font-weight: 600;
-      color: #b4bac4;
-      cursor: pointer;
-      text-align: left;
-    }
-
-    .pos-rel {
-      position: relative;
-    }
-
-    .banner-partners {
-      display: flex;
-      height: 80px;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .banner-partners>img {
-      width: 80px;
-    }
-
-    .text-white {
-      color: white;
-    }
-
-    .banner-program-stats {
-      display: flex;
-      gap: 50px;
-      padding: 25px;
-      background-color: #fff;
-      color: black;
-      box-shadow: 0 6px 22px 0 rgba(0, 0, 0, 0.08);
-      position: absolute;
-      top: 450px;
-    }
-
-    .stats {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .stat-1 {
-      font-size: 30px;
-    }
-
-    .stats p {
-      margin: 0;
-      margin-top: 10px;
-    }
-
-    .font-sm {
-      font-size: 14px;
-    }
-
-    .text-left {
-      text-align: left;
-    }
-
-    .text-grey {
-      color: #b4bac4;
-      ;
-    }
-
-    #programme-overview {
-      width: 1140px;
-      margin: auto;
-      margin-top: 250px;
-      height: auto;
-    }
-
-    .content {
-      display: flex;
-    }
-
-    .highlights {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .highlight-content {
-      display: flex;
-    }
-
-    .card {
-      display: flex;
-      justify-content: space-between;
-      width: 390px;
-      height: 321px;
-      padding: 24px;
-      border-radius: 10px;
-      box-shadow: 0 6px 22px 0 rgba(0, 0, 0, 0.08);
-    }
-
-    .card p {
-      margin-top: 24px;
-      font-size: 16px;
-      line-height: 24px;
-      font-style: italic;
-      overflow: hidden;
-      font-weight: 300;
-      color: #000;
-    }
-
-    #syllabus {
-      background-image: linear-gradient(155deg, #4661db, #4fb4c9);
-    }
-
-    .container-syllabus {
-      width: 100%;
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-    }
-
-    .container-syllabus p,
-    .container-syllabus h1 {
-      color: white;
-    }
-
-    .accordion {
-      width: 100%;
-      max-width: 1000px;
-    }
-
-    .accordion-item {
-      background-color: #ecf3fc;
-      color: #111;
-      margin: 1rem 0;
-      border: 1px solid black;
-      /* border-radius: 0.5rem; */
-      /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); */
-    }
-
-    .accordion-item-header {
-      padding: 0.5rem 3rem 0.5rem 1rem;
-      min-height: 3.5rem;
-      line-height: 1.25rem;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .accordion-item-header::after {
-      content: "\02C7";
-      font-size: 3rem;
-      position: absolute;
-      right: 1rem;
-    }
-
-    .accordion-item-header.active::after {
-      content: "\02C6";
-    }
-
-    .accordion-item-body {
-      background: #fff;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-    }
-
-    .accordion-item-body-content {
-      padding: 1rem;
-      line-height: 1.5rem;
-      border-top: 1px solid;
-    }
-
-    .lists {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .flex-item {
-      padding-bottom: 35px;
-      border-bottom: 1px solid black;
-    }
-
-    .border-none {
-      border: none;
-    }
-
-    #navBar_ms {
-      margin: auto;
-      width: 1200px;
-      height: 90px;
-      /* border: 2px solid black; */
-      display: flex;
-      gap: 25px;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-
-    #upGrad_logo_ms {
-      width: 100px;
-      padding: 10px;
-    }
-
-    #nav_courses_btn_ms {
-      background-color: rgb(209, 24, 24);
-      color: whitesmoke;
-      border-radius: 3px;
-      border: red;
-      padding: 8px;
-      margin-bottom: 8px;
-      width: 120px;
-      height: 35px;
-      font-size: smaller;
-      font-weight: bolder;
-      /* font-family:  */
-    }
-
-    .nav_options_ms {
-      font-size: smaller;
-      font-weight: bolder;
-    }
-
-    #startLearning_btn_ms {
-      background-color: rgb(209, 24, 24);
-      color: whitesmoke;
-      border-radius: 3px;
-      border: red;
-      padding: 8px;
-      margin-bottom: 8px;
-      width: 160px;
-      height: 42px;
-      font-size: 14px;
-      font-weight: bolder;
-    }
-  </style>
 </head>
 
 <body>
@@ -492,6 +93,7 @@
       </div>
     </div>
   </section>
+
   <section id="programme-overview">
     <h1>Programme Overview</h1>
     <h3>Key Highlights</h3>
@@ -634,8 +236,136 @@
       </div>
     </div>
   </section>
-</body>
 
+  <section id="instructor-mk">
+    <div class="instructor-container">
+      <div class="heading">
+        <h1>Instructors and Experts</h1>
+        <p>Learn from India's leading Blockchain faculty and industry leaders </p>
+      </div>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="text-black">Mathew</h1>
+                  <p class="text-black">Professor</p>
+                  <p>He has a Ph.D in Physics and has published more than 60 papers on OSS and has presented 32
+                    technical papers at national and international</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=635&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="name-inst">Jeremey</h1>
+                  <p>Associate Professor</p>
+                  <p>He has a PhD from the Department of Computer Science and Automation, IISC Bangalore.A master's from
+                    IIT Roorkee and a BE from Nagpur University.</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="name-inst">Jenny</h1>
+                  <p>Associate Professor</p>
+                  <p>She did her Master's in Mathematics from University of Madras,Chennai.</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="name-inst">Ron</h1>
+                  <p>Head | Techonology and Innovation</p>
+                  <p>He has 18+ years of experience as a technologist and innovator who has delivered innovative
+                    software solution for industry-leading enterprises</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="name-inst">Fred</h1>
+                  <p>Blockchain Advisory and Presales</p>
+                  <p>He completed his MBA from SP Jaon and has more than a decade of experience in finance, consultancy
+                    and innovative technologies such as Blockchain.</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="name-inst">Joshua</h1>
+                  <p>Chief Mentor | Blockchain Alliance</p>
+                  <p>He has 16+ years of experience and is a Global IT innovation Advisor and Industry Expert for
+                    emerging technologies like Blockchain,AI and Fintech</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card-instructor">
+                <div class="card-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1608791952180-79294109d843?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+                </div>
+                <div class="card-content">
+                  <h1 class="name-inst">Ned</h1>
+                  <p>CEO</p>
+                  <p>He has over 20 years of experience & is working on multiple projects creating use cases for
+                    Blockchain</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left text-black" data-glide-dir="<">
+              < </button> <button class="glide__arrow glide__arrow--right text-black" data-glide-dir=">">>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>;
+<script src="madan.js"></script>
 <script>
   var open = document.getElementById('open')
   var modal_container = document.querySelector('.modal-container')
