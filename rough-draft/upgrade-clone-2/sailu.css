@@ -1,15 +1,20 @@
 #upgrade_sc{
   height: 400px;
   width: 1200px;
-  border: 0.5px solid rgb(218, 213, 213);
+  /* border: 0.5px solid rgb(218, 213, 213); */
   border-radius: 20px;
   margin: auto;
+  margin-top: 50px;
   
 }
 
 #name_sc{
   height: 40%;
   width: 100%;
+}
+
+#name_sc > *{
+  text-align: center;
 }
 
 #contact_sc{
@@ -35,7 +40,7 @@
 }
 
 #name_sc h3{
-  padding-left: 520px;
+  /* padding-left: 520px; */
   font-size: 28px;
 }
 
@@ -95,7 +100,7 @@ line_sc{
 #btn_des_sc{
   height: 100px;
   width: 66%;
-  border: 0.3px solid rgb(233, 230, 230) ;
+  /* border: 0.3px solid rgb(233, 230, 230) ; */
   margin-top: 0.5%;
   margin-left: 17%;
   border-radius: 8px;
@@ -191,8 +196,8 @@ line_sc{
 }
 #head1_btn1_sc{
  height: 8%;
- width: 50%;
- border: 0.5px solid white;
+ width: 55%;
+ /* border: 0.5px solid white; */
  border-radius: 8px;
  color: gray;
  align-items: center;
@@ -202,7 +207,7 @@ line_sc{
 #head1_btn2_sc{
  height: 8%;
  width: 50%;
- border: 0.5px solid white;
+ /* border: 0.5px solid white; */
  border-radius: 8px;
  color: gray;
  align-items: center;

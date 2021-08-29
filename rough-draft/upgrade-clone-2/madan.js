@@ -4,7 +4,6 @@
 // };
 // new Glide('.glide', config).mount();
 
-//
 const glide = document.querySelectorAll('.glide');
 
 Object.values(glide).map((gl) => {
