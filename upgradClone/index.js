@@ -781,7 +781,8 @@ function showBlockchain() {
 
       var btn = document.createElement('a');
       btn.style.display = 'block'
-      btn.href = '../blockchain/block-chain.html'
+      // btn.href = '../blockchain/block-chain.html'
+      btn.href = './blockchain/block-chain.html'
       btn.setAttribute('class', 'btn1');
       btn.innerHTML = 'VIEW PROGRAM &#10132';
       // btn.onclick = function (event) {
