@@ -13,10 +13,6 @@ Pull the repo navigate to the folder upgradClone final and Open Index.html
 
 ## Library's Used
 [Glide.js](https://glidejs.com/): to make the carousel in the webpage
-  
-
-Third party library
-Glide.js to make the carousel
 
 ## Contributors
 1. Manasvi Sharma
