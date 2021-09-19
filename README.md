@@ -1,10 +1,10 @@
 # UPGRAD CLONE
 
-This is repository is a clone of the website https://www.upgrad.com/. 
+This repository is a clone of the website [upgrad](https://www.upgrad.com/)
 
 # Installation
 
-Pull the repo navigate to upgrad-clone final. Open Index.html
+Pull the repo navigate to the folder upgradClone final and Open Index.html
 
 ## Tech Stack Used
 1.  HTML
